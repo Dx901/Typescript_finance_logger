@@ -1,35 +1,22 @@
-//ararys
-let names = ['luigi', 'dupont', 'Yatoshi', 56]
-//When you create an array the types can nort change later on
+//explicit types
+let character: string
+let age: number
+let isLoggedIn: Boolean
 
+age = 56
 
-let numbers = [10, 23, 56, 67]
-numbers.push(76)
+//arrays
+let ninjas: string[] = []
 
-names.push('ted')
-names.push(45)
+ninjas.push("mkuru")
 
-let mixed = ['mkuru', 'chun-li', 67, 76, true]
+//union types
+let mixed: (string|number|boolean)[] = []
+mixed.push(23)
+mixed.push(true)
+mixed.push("mkuru")
+console.log(mixed)
 
-mixed.push(false)
-mixed.push(566)
-
-mixed[0] = 56
-
-
-//Objects
-let mkuru = {
-    name: "mario",
-    belt: "black",
-    age: 34
-}
-
-mkuru.name = "Dyes"
-mkuru.age = 23
-
-mkuru = {
-    name: "messi",
-    belt: "black",
-    age: 37,
-    // skills: "Programming"
-}
+//objects
+let nin jaone: object
+ninjaone = { name: "Mkuru", age: 19}
