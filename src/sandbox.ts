@@ -1,21 +1,10 @@
-let greet: Function
+type stringOrNum = string | number
+type objWithName = { name: string, uid: stringOrNum}
 
-greet = () => {
-    console.log("hello!!")
+const logDetails = (uid: stringOrNum, item: string) => {
+    console.log(`${item} has a uid of ${uid}`);
 }
 
-const add = (a: number, b: number, c: number | string = 10) => {
-    console.log(a + b)
-    // A typescript function returns a void value
-    // when we do not return something
-    // A complete lack of return value
-    console.log(c)
+const greet = (user: objWithName) => {
+    console.log(`${user.name} says hello`)
 }
-
-add(6, 11)
-
-
-const minus = (a: number, b: number): number => {
-    return a + b
-}
-let result = minus (10, 7)
