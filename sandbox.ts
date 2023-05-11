@@ -1,22 +1,20 @@
-//explicit types
-let character: string
-let age: number
-let isLoggedIn: Boolean
+let age: any = 25
 
-age = 56
+age = true
+console.log(age)
 
-//arrays
-let ninjas: string[] = []
+age = 'hello'
+console.log(age)
 
-ninjas.push("mkuru")
+age = { name: 'Mkuru'}
+console.log(age)
 
-//union types
-let mixed: (string|number|boolean)[] = []
-mixed.push(23)
-mixed.push(true)
-mixed.push("mkuru")
+let mixed: any = []
+mixed.push(1)
+mixed.push('mkuru')
+mixed.push(false)
 console.log(mixed)
 
-//objects
-let nin jaone: object
-ninjaone = { name: "Mkuru", age: 19}
+let ninja: { name: any, age: any}
+ninja = { name: 'Mkuru', age: 34}
+console.log(ninja)

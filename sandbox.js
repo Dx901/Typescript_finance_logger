@@ -1,25 +1,15 @@
-//ararys
-var names = ['luigi', 'dupont', 'Yatoshi', 56];
-//When you create an array the types can nort change later on
-var numbers = [10, 23, 56, 67];
-numbers.push(76);
-names.push('ted');
-names.push(45);
-var mixed = ['mkuru', 'chun-li', 67, 76, true];
+var age = 25;
+age = true;
+console.log(age);
+age = 'hello';
+console.log(age);
+age = { name: 'Mkuru' };
+console.log(age);
+var mixed = [];
+mixed.push(1);
+mixed.push('mkuru');
 mixed.push(false);
-mixed.push(566);
-mixed[0] = 56;
-//Objects
-var mkuru = {
-    name: "mario",
-    belt: "black",
-    age: 34
-};
-mkuru.name = "Dyes";
-mkuru.age = 23;
-mkuru = {
-    name: "messi",
-    belt: "black",
-    age: 37,
-    // skills: "Programming"
-};
+console.log(mixed);
+var ninja;
+ninja = { name: 'Mkuru', age: 34 };
+console.log(ninja);
